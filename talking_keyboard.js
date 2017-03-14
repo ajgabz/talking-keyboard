@@ -19,7 +19,7 @@ $(document).ready(function(){
         // Also, speak the letter.
         mousedown: function() {
             $("#selectedLetter").stop().css('opacity', '1.0').text($(this).text());
-            responsiveVoice.speak($(this).text(), "UK English Male");
+            responsiveVoice.speak($(this).text().toLowerCase(), "UK English Male");
         },
 
         // Upon mouse-up, fade away the shown letter.
