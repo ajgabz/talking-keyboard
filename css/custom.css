@@ -1,0 +1,64 @@
+/*
+* Custom CSS stylesheet for TalkingAlphabet's elements
+* By Aaron Gaba
+*/
+
+
+.container {
+    max-width: 800px; }
+
+.header {
+    margin-top: 6rem;
+    text-align: center; }
+
+.keyboard {
+    text-align: center;
+}
+
+
+
+button.keyboard-key:active {
+    color: #FFF;
+    background-color: #33C3F0;
+    border-color: #33C3F0;
+}
+
+/* The active-style class is used by jQuery
+   to simulate CSS's ":active" pseudo-class.
+*/
+button.active-style {
+    color: #FFF;
+    background-color: #33C3F0;
+    border-color: #33C3F0;
+}
+
+/* Dynamically adjusts the size of the keyboard's buttons. */
+@media (min-width: 300px) {
+    button.keyboard-key {
+        padding: 0px 10px;
+    }
+}
+
+@media (min-width: 520px) {
+    button.keyboard-key {
+        padding: 0px 15px;
+    }
+}
+
+@media (min-width: 700px) {
+    button.keyboard-key {
+        padding: 0px 20px;
+    }
+}
+
+@media (min-width: 800px) {
+    button.keyboard-key {
+        padding: 0px 25px;
+    }
+}
+
+@media (min-width: 930px) {
+    button.keyboard-key {
+        padding: 0px 30px;
+    }
+}
