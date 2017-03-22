@@ -15,7 +15,9 @@
     text-align: center;
 }
 
-
+button.keyboard-key {
+    font-family: "Courier New", Courier, monospace;
+}
 
 button.keyboard-key:active {
     color: #FFF;
@@ -33,7 +35,19 @@ button.active-style {
 }
 
 /* Dynamically adjusts the size of the keyboard's buttons. */
-@media (min-width: 300px) {
+@media (min-width: 320px) {
+    button.keyboard-key {
+        padding: 0px 5px;
+    }
+}
+
+@media (min-width: 335px) {
+    button.keyboard-key {
+        padding: 0px 8px;
+    }
+}
+
+@media (min-width: 375px) {
     button.keyboard-key {
         padding: 0px 10px;
     }
